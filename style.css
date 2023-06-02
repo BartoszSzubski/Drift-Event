@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+/*background video at the end */
+
+main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(rgba(8, 2, 34, 0.25), rgba(6, 0, 32, 0.25));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 3rem;
+  padding: 5rem 15rem;
+}
+nav p {
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+nav ul li {
+  padding: 0rem 2rem;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  color: white;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.3rem;
+  left: 0;
+  bottom: 0;
+  background: red;
+  transform: scale(0, 1);
+  transform-origin: 0% 100%;
+  transition: transform 0.3s ease;
+}
+nav ul li a:hover::after {
+  transform: scale(1, 1);
+}
+h1 {
+  font-size: 8rem;
+}
+.content {
+  text-align: center;
+  margin: 50px 0px;
+}
+.content button {
+  padding: 20px 50px;
+  border-radius: 30px;
+  margin: 30px 0px;
+  background: inherit;
+  border: 2px solid white;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+
+.content button:hover {
+  background: white;
+  color: rgba(0, 0, 0, 1);
+  transform: scale(1.1);
+}
+
+.background-video {
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
