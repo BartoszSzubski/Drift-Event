@@ -132,7 +132,10 @@ h1 {
   cursor: pointer;
   transition: ease 0.3s;
 }
-
+a {
+  color: inherit;
+  text-decoration: none;
+}
 .content button:hover {
   background: white;
   color: rgba(0, 0, 0, 1);
@@ -184,4 +187,220 @@ h1 {
     top: 10px;
     left: 50px; /*dostosowanie logo do max-width 900px*/
   }
+}
+
+/*TICKETS PAGE*/
+main {
+  position: absolute;
+}
+.container-tickets {
+  position: absolute;
+  top: 25%;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+}
+.container-tickets__data {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 3rem;
+  color: red;
+}
+.container-tickets__content {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 5rem;
+  font-size: 2.5rem;
+}
+.container-tickets__content--price {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 5rem;
+  font-size: 2.5rem;
+}
+.days-event-boxes {
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+}
+
+.days-events-pick {
+  border: 2px solid white;
+  width: 15%;
+  min-height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.days-events-pick:hover {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 1);
+}
+
+.ticket-price {
+  display: flex;
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  padding-left: 18%;
+}
+.add-to-cart-field {
+  padding-left: 18%;
+}
+
+.add-to-cart-field button {
+  font-size: 2rem;
+  background-color: inherit;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0.5rem;
+  cursor: pointer;
+  min-height: 5rem;
+}
+.add-to-cart-field button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.add-to-cart-field input {
+  width: 4%;
+  min-height: 4rem;
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  background-color: inherit;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.event-schedule__list {
+  display: flex;
+  justify-content: space-evenly;
+
+  font-size: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 80%;
+  padding: 1rem;
+}
+
+.event-schedule__li ul {
+  padding: 5rem;
+}
+.event-schedule__li ul li {
+  padding-right: 200rem;
+}
+
+.event-schedule {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+.event-schedule__list li strong {
+  color: red;
+}
+
+/*CONTACT PAGE*/
+.container-contact-us {
+  display: flex;
+  flex-direction: column;
+}
+.contact-us-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title_and_info h3 {
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.title_and_info {
+  width: 70%;
+  font-size: 1.8rem;
+}
+.contact-us-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 2%;
+  font-size: 1.8rem;
+}
+.icon-address-box,
+.icon-phone-box,
+.icon-instagram-box {
+  padding: 3rem;
+  font-size: 3rem;
+}
+.icon-title strong {
+  font-size: 2.5rem;
+  color: red;
+}
+
+.right-form {
+  background-color: #fff;
+  opacity: 0.85;
+  min-width: 400px;
+  min-height: 500px;
+  border-radius: 10px;
+}
+.right-form form {
+  color: black;
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 3rem;
+}
+
+.right-form form .inputBox input,
+.right-form form .inputBox textarea {
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid black;
+  padding: 20px;
+  outline: none;
+}
+.right-form form .inputBox {
+  position: relative;
+}
+.right-form form .inputBox span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.input-send {
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.input-send:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 121, 30, 0.9);
+}
+
+.inputBox input {
+  padding-top: 5rem;
 }

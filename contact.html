@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>DRIFT EVENT</title>
+  </head>
+  <body>
+    <main>
+      <nav id="navbar" class="navbar">
+        <p>LOGO</p>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#">GALLERY</a></li>
+          <li><a href="tickets.html">EVENT</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger-menu">
+          <div class="hamburger__line hamburger__line--top"></div>
+          <div class="hamburger__line hamburger__line--mid"></div>
+          <div class="hamburger__line hamburger__line--bottom"></div>
+        </div>
+      </nav>
+      <div class="container-contact-us">
+        <div class="contact-us-top">
+          <div class="title_and_info">
+            <h3>Contact Us</h3>
+            <p>
+              If you have any questions, feedback, or would like to obtain more
+              information about our event, please feel free to reach out to us.
+              Our customer service team is ready to answer your inquiries and
+              provide you with the assistance you need. We encourage you to get
+              in touch with us directly. We will be delighted to respond to your
+              queries regarding tickets, schedule, venue, and other details
+              about our drift event. Please use the contact information below to
+              get in touch with us.
+            </p>
+          </div>
+        </div>
+        <div class="contact-us-bottom">
+          <div class="left-icons">
+            <div class="icon-address-box">
+              <div class="icon-address"></div>
+              <p class="icon-title"><strong>Address</strong></p>
+              <p class="icon-content">Batorowska 42, 60-185 Skórzewo</p>
+            </div>
+            <div class="icon-phone-box">
+              <div class="icon-phone"></div>
+              <p class="icon-title"><strong>Phone</strong></p>
+              <p class="icon-content">605-824-5921</p>
+            </div>
+            <div class="icon-instagram-box">
+              <div class="icon-instagram"></div>
+              <p class="icon-title"><strong>Instagram</strong></p>
+              <p class="icon-content">drift_event</p>
+            </div>
+          </div>
+          <div class="right-form">
+            <form>
+              <h4>Send message</h4>
+              <div class="inputBox">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Write your name here"
+                  required="required"
+                />
+                <span></span>
+              </div>
+              <div class="inputBox">
+                <input
+                  type="text"
+                  name="Email"
+                  placeholder="Email:"
+                  required="required"
+                />
+                <span></span>
+              </div>
+              <div class="inputBox">
+                <textarea
+                  placeholder="Your message here..."
+                  id=""
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <span></span>
+                <div class="inputBox">
+                  <input class="input-send" type="submit" value="Send" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <video autoplay loop muted plays-inline class="background-video">
+      <source src="images/background-contact.mp4" type="video/mp4" />
+    </video>
+    <script src="main.js"></script>
+  </body>
+</html>
