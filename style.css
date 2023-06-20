@@ -191,11 +191,11 @@ a {
 
 /*TICKETS PAGE*/
 main {
-  position: absolute;
+  position: fixed;
 }
 .container-tickets {
   position: absolute;
-  top: 25%;
+  top: 18%;
 }
 h2 {
   display: flex;
@@ -403,4 +403,123 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .inputBox input {
   padding-top: 5rem;
+}
+
+/*GALLERY PAGE*/
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+}
+.gallery-btn {
+  font-size: 3rem;
+  padding: 3rem;
+}
+.gallery-menu {
+  margin: 1rem;
+}
+
+.gallery-container h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.gallery-container h1 span {
+  color: red;
+}
+.gallery-photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+.gallery-menu a {
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.gallery-menu a:hover {
+  color: red;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.photo-in-gallery {
+  max-height: 30rem;
+  object-fit: cover;
+  max-width: 30rem;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  min-width: 15%;
+  min-height: 12%;
+}
+
+.photo-in-gallery img {
+  transition: 0.5s ease;
+}
+.photo-in-gallery img:hover {
+  transform: scale(1.2);
+  transform-origin: center;
+}
+.photo-in-gallery:hover {
+  box-shadow: rgba(167, 167, 167, 0.25) 0px 54px 55px,
+    rgba(131, 131, 131, 0.12) 0px -12px 30px,
+    rgba(199, 199, 199, 0.12) 0px 4px 6px,
+    rgba(136, 136, 136, 0.17) 0px 12px 13px,
+    rgba(207, 207, 207, 0.09) 0px -3px 5px;
+}
+
+.photo-in-gallery-child {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.background-gallery-page video {
+  filter: brightness(0.3);
+}
+
+/*popup styling */
+
+.popup {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup.hidden {
+  display: none;
+}
+.popup__img {
+  max-width: 60%;
+  max-height: 60%;
+}
+
+.popup__close {
+  position: fixed;
+  top: 8rem;
+  right: 8rem;
+  font-size: 8rem;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.popup__close:hover {
+  color: red;
 }
